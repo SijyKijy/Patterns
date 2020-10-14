@@ -1,4 +1,6 @@
-﻿namespace Patterns
+﻿using Patterns.Structural.Adapter;
+
+namespace Patterns
 {
     class Program
     {
@@ -20,6 +22,7 @@
 
             //new Decorator_Run();
             //new Facade_Run();
+            //new Adapter_Run();
 
             #endregion
 
