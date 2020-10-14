@@ -5,7 +5,14 @@ namespace Patterns.Creationals.Factories.Abstract_Factory
 {
     public class AbstractFactory_Run
     {
-        public AbstractFactory_Run(IPencilsFactory factory)
+        public AbstractFactory_Run()
+        {
+            Run(new NewPencilsFactory());
+            Console.WriteLine("--- --- ---");
+            Run(new OldPencilcsFactory());
+        }
+
+        private void Run(IPencilsFactory factory)
         {
             var hardPencil = factory.CreateHardPencil();
             var softPencil = factory.CreateSoftPencil();
