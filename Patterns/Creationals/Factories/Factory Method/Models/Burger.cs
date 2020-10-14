@@ -1,7 +1,7 @@
-﻿using Patterns.Creationals.Factories.FactoryMethod.Interfaces;
+﻿using Patterns.Creationals.Factories.Factory_Method.Interfaces;
 using System;
 
-namespace Patterns.Creationals.Factories.FactoryMethod.Models
+namespace Patterns.Creationals.Factories.Factory_Method.Models
 {
     public class Burger : IFood
     {

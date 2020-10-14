@@ -24,12 +24,24 @@ namespace Patterns
             #endregion
 
             #region Builder
-            new Builder_Run();
+            //new Builder_Run();
             #endregion
 
             #region Prototype
             //new Prototype_Run();
             #endregion
+
+            #endregion
+
+            #region Structural
+
+
+
+            #endregion
+
+            #region Behavioral
+
+
 
             #endregion
         }

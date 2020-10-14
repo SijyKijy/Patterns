@@ -1,4 +1,4 @@
-﻿namespace Patterns.Creationals.Factories.FactoryMethod.Interfaces
+﻿namespace Patterns.Creationals.Factories.Factory_Method.Interfaces
 {
     public abstract class FoodFactory
     {

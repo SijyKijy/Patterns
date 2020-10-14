@@ -1,7 +1,7 @@
-﻿using Patterns.Creationals.Factories.FactoryMethod.Interfaces;
-using Patterns.Creationals.Factories.FactoryMethod.Models;
+﻿using Patterns.Creationals.Factories.Factory_Method.Interfaces;
+using Patterns.Creationals.Factories.Factory_Method.Models;
 
-namespace Patterns.Creationals.Factories.FactoryMethod.Factories
+namespace Patterns.Creationals.Factories.Factory_Method.Factories
 {
     public class MangoFactory : FoodFactory
     {

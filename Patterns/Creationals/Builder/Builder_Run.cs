@@ -19,7 +19,7 @@ namespace Patterns.Creationals.Builder
             var builder2 = new WoodHouseBuilder(new WoodHouse());
             builder2.BuildFloor();
             builder2.BuildWoodTable();
-            System.Console.WriteLine(builder2.Build().GetParts()); 
+            System.Console.WriteLine(builder2.Build().GetParts());
         }
     }
 }
