@@ -3,9 +3,11 @@ using Patterns.Structural.Adapter.Models;
 
 namespace Patterns.Structural.Adapter
 {
-    public class Adapter_Run
+    public class Adapter_Run : Pattern
     {
-        public Adapter_Run()
+        protected override string Name => "Адаптер / Adapter";
+
+        protected override void Run()
         {
             string phone = "Мобила";
 

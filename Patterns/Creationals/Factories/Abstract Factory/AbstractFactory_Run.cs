@@ -3,9 +3,11 @@ using System;
 
 namespace Patterns.Creationals.Factories.Abstract_Factory
 {
-    public class AbstractFactory_Run
+    public class AbstractFactory_Run : Pattern
     {
-        public AbstractFactory_Run()
+        protected override string Name => "Абстрактная фабрика / AbstractFactory";
+
+        protected override void Run()
         {
             Run(new NewPencilsFactory());
             Console.WriteLine("--- --- ---");

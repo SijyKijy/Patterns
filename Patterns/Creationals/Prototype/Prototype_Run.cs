@@ -3,9 +3,11 @@ using System;
 
 namespace Patterns.Creationals.Prototype
 {
-    public class Prototype_Run
+    public class Prototype_Run : Pattern
     {
-        public Prototype_Run()
+        protected override string Name => "Прототип / Prototype";
+
+        protected override void Run()
         {
             Employee employee1 = new Employee()
             {

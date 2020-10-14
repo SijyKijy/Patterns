@@ -4,9 +4,11 @@ using System;
 
 namespace Patterns.Creationals.Factories.Factory_Method
 {
-    public class FactoryMethod_Run
+    public class FactoryMethod_Run : Pattern
     {
-        public FactoryMethod_Run()
+        protected override string Name => "Фабричный метод / FactoryMethod";
+
+        protected override void Run()
         {
             Run(new BurgerFactory());
             Console.WriteLine("--- --- ---");

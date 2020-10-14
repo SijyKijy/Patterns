@@ -2,9 +2,11 @@
 
 namespace Patterns.Creationals.Factories.Simple_Factory
 {
-    public class SimpleFactory_Run
+    public class SimpleFactory_Run : Pattern
     {
-        public SimpleFactory_Run()
+        protected override string Name => "Простая фабрика / Simple Factory";
+
+        protected override void Run()
         {
             System.Console.WriteLine("--- Simple Factory ---");
             ComputerFactory factory = new ComputerFactory();

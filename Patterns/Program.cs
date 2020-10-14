@@ -1,4 +1,4 @@
-﻿using Patterns.Structural.Adapter;
+﻿using Patterns.Creationals.Factories.Abstract_Factory;
 
 namespace Patterns
 {

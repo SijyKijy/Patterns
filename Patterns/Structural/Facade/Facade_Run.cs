@@ -2,9 +2,11 @@
 
 namespace Patterns.Structural.Facade
 {
-    public class Facade_Run
+    public class Facade_Run : Pattern
     {
-        public Facade_Run()
+        protected override string Name => "Фасад / Facade";
+
+        protected override void Run()
         {
             var counter = new Counter();
             var printer = new Printer();

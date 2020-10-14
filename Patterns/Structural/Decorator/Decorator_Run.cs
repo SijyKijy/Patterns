@@ -4,11 +4,11 @@ using Patterns.Structural.Decorator.Models;
 
 namespace Patterns.Structural.Decorator
 {
-    public class Decorator_Run
+    public class Decorator_Run : Pattern
     {
-        public Decorator_Run() => Run();
+        protected override string Name => "Декоратор / Decorator";
 
-        private void Run()
+        protected override void Run()
         {
             var normalHuman = new OrdinaryHuman();
 

@@ -4,9 +4,11 @@ using Patterns.Creationals.Builder.Modules.Builders;
 
 namespace Patterns.Creationals.Builder
 {
-    public class Builder_Run
+    public class Builder_Run : Pattern
     {
-        public Builder_Run()
+        protected override string Name => "Строитель/Builder";
+
+        protected override void Run()
         {
             // Стройка через директора
             var builder = new ModernHouseBuilder(new ModernHouse());
