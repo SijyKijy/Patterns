@@ -1,5 +1,5 @@
 ﻿using Patterns.Modules;
-using System;
+using Patterns.Patterns.Structural.Composite.Models;
 
 namespace Patterns.Patterns.Structural.Composite
 {
@@ -9,7 +9,13 @@ namespace Patterns.Patterns.Structural.Composite
 
         public override void Run()
         {
-            throw new NotImplementedException();
+            Box box = new Box("SmallBox");
+
+            box.Add(new Product("Журнал"));
+            box.Add(new Product("Стакан"));
+            box.Add(new Product("Ручка"));
+
+            box.Display();
         }
     }
 }
