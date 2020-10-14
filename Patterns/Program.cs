@@ -38,19 +38,31 @@ namespace Patterns
             #region Structural
 
             #region Decorator
-            var normanHuman = new OrdinaryHuman();
+            //var normalHuman = new OrdinaryHuman();
+            //var simple = new Decorator_Run();
 
-            var simple = new Decorator_Run();
+            //// Можно через конструкторы. Тогда мы говорим, что наш человек не поменяется
+            //var boozerDecorator = new BoozerDecorator(normalHuman);
+            //var vegetarianDecorator = new VegetarianDecorator(normalHuman);
+            //var vegetarianAndBoozerDecorator = new VegetarianDecorator(boozerDecorator);
 
-            var boozerHuman = new BoozerDecorator(normanHuman);
-            var vegetarian = new VegetarianDecorator(normanHuman);
-            var vegetarianAndBoozer = new VegetarianDecorator(boozerHuman);
+            //boozerDecorator.AskAlms();
 
+            //simple.GetResult(normalHuman);
+            //simple.GetResult(boozerDecorator);
+            //simple.GetResult(vegetarianDecorator);
+            //simple.GetResult(vegetarianAndBoozerDecorator);
 
-            simple.GetResult(normanHuman);
-            simple.GetResult(boozerHuman);
-            simple.GetResult(vegetarian);
-            simple.GetResult(vegetarianAndBoozer);
+            //// А можно через Set-метод
+            //System.Console.WriteLine("--- --- ---");
+            //normalHuman = new OrdinaryHuman();
+            //vegetarianDecorator = new VegetarianDecorator(null);
+
+            //simple.GetResult(vegetarianDecorator); // Тут скажет только веган
+
+            //vegetarianDecorator.SetHuman(normalHuman); // Декорируем (оборачиваем) человека
+
+            //simple.GetResult(vegetarianDecorator); // Человек + Веган
             #endregion
 
             #endregion

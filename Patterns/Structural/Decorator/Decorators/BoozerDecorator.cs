@@ -9,5 +9,7 @@ namespace Patterns.Structural.Decorator.Decorators
         }
 
         public override string Speak() => $"{base.Speak()} | ROOOOAAAAR!";
+
+        public void AskAlms() => System.Console.WriteLine("Подайте рублик на попить!");
     }
 }
