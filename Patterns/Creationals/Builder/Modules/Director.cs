@@ -1,26 +1,34 @@
-﻿using Patterns.Creationals.Builder.Interfaces;
+﻿using Patterns.Creationals.Builder.Modules.Builders;
 
 namespace Patterns.Creationals.Builder.Modules
 {
     public class Director
     {
-        private IHouseBuilder<House> _builder;
-        public Director(IHouseBuilder<House> builder)
-        {
-            _builder = builder;
-        }
+        private ModernHouseBuilder _builder;
+        public Director(ModernHouseBuilder builder) => _builder = builder;
 
-        public IHouseBuilder<House> Builder
+        public ModernHouseBuilder Builder
         {
             set => _builder = value;
         }
 
-        public House BuildHouse()
+        public void BuildModernHouse()
         {
+            System.Console.WriteLine("Строим модерн");
             _builder.BuildFloor();
             _builder.BuildWalls();
             _builder.BuildRoof();
-            return _builder.Build();
+            _builder.BuildStatue();
+            System.Console.WriteLine(_builder.Build().GetParts());
+        }
+
+        public void BuildSimpleHouse()
+        {
+            System.Console.WriteLine("Строим обычный дом");
+            _builder.BuildFloor();
+            _builder.BuildWalls();
+            _builder.BuildRoof();
+            System.Console.WriteLine(_builder.Build().GetParts());
         }
     }
 }

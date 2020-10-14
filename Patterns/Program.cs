@@ -1,5 +1,4 @@
-﻿using Patterns.Creationals.Factories.FactoryMethod;
-using Patterns.Creationals.Factories.FactoryMethod.Factories;
+﻿using Patterns.Creationals.Builder;
 
 namespace Patterns
 {
@@ -25,7 +24,7 @@ namespace Patterns
             #endregion
 
             #region Builder
-            //new Builder_Run();
+            new Builder_Run();
             #endregion
 
             #region Prototype

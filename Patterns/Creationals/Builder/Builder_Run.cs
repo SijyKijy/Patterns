@@ -1,6 +1,6 @@
 ﻿using Patterns.Creationals.Builder.Models;
 using Patterns.Creationals.Builder.Modules;
-using System;
+using Patterns.Creationals.Builder.Modules.Builders;
 
 namespace Patterns.Creationals.Builder
 {
@@ -8,12 +8,18 @@ namespace Patterns.Creationals.Builder
     {
         public Builder_Run()
         {
-            var builder = new HouseBuilder(new WoodHouse());
+            // Стройка через директора
+            var builder = new ModernHouseBuilder(new ModernHouse());
             var director = new Director(builder);
-            Console.WriteLine(director.BuildHouse().GetParts());
+            director.BuildModernHouse();
+            director.BuildSimpleHouse();
 
-            director.Builder = new HouseBuilder(new ModernHouse());
-            Console.WriteLine(director.BuildHouse().GetParts());
+            // Стройка руками
+            System.Console.WriteLine("Строим ручками");
+            var builder2 = new WoodHouseBuilder(new WoodHouse());
+            builder2.BuildFloor();
+            builder2.BuildWoodTable();
+            System.Console.WriteLine(builder2.Build().GetParts()); 
         }
     }
 }

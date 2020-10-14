@@ -1,13 +1,12 @@
-﻿using Patterns.Creationals.Builder.Interfaces;
-using System;
+﻿using System;
 
-namespace Patterns.Creationals.Builder.Modules
+namespace Patterns.Creationals.Builder.Interfaces
 {
-    public class HouseBuilder : IHouseBuilder<House>
+    public abstract class HouseBuilder<T> where T : House, new()
     {
-        private House _house;
+        private T _house;
 
-        public HouseBuilder(House house) => _house = house;
+        public HouseBuilder(T house) => _house = house;
 
         public void BuildFloor()
         {
@@ -27,6 +26,13 @@ namespace Patterns.Creationals.Builder.Modules
             _house.AddPart("Стены");
         }
 
-        public House Build() => _house;
+        public void Reset() => _house = new T();
+
+        public T Build()
+        {
+            T result = _house;
+            Reset();
+            return result;
+        }
     }
 }
