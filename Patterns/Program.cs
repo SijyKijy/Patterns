@@ -1,4 +1,6 @@
-﻿using Patterns.Creationals.Builder;
+﻿using Patterns.Structural.Decorator;
+using Patterns.Structural.Decorator.Decorators;
+using Patterns.Structural.Decorator.Models;
 
 namespace Patterns
 {
@@ -35,7 +37,21 @@ namespace Patterns
 
             #region Structural
 
+            #region Decorator
+            var normanHuman = new OrdinaryHuman();
 
+            var simple = new Decorator_Run();
+
+            var boozerHuman = new BoozerDecorator(normanHuman);
+            var vegetarian = new VegetarianDecorator(normanHuman);
+            var vegetarianAndBoozer = new VegetarianDecorator(boozerHuman);
+
+
+            simple.GetResult(normanHuman);
+            simple.GetResult(boozerHuman);
+            simple.GetResult(vegetarian);
+            simple.GetResult(vegetarianAndBoozer);
+            #endregion
 
             #endregion
 
