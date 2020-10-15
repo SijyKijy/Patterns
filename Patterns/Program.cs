@@ -1,6 +1,6 @@
 ﻿
 using Patterns.Patterns.Structural;
-using Patterns.Patterns.Structural.Composite;
+using Patterns.Patterns.Structural.Proxy;
 
 namespace Patterns
 {
@@ -28,7 +28,8 @@ namespace Patterns
             //structuralStarter.Start(new Decorator_Run());
             //structuralStarter.Start(new Facade_Run());
             //structuralStarter.Start(new Adapter_Run());
-            structuralStarter.Start(new Composite_Run());
+            //structuralStarter.Start(new Composite_Run());
+            structuralStarter.Start(new Proxy_Run());
             #endregion
 
             #region Behavioral
