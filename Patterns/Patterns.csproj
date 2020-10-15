@@ -6,9 +6,4 @@
     <LangVersion>preview</LangVersion>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="Behavioral\" />
-    <Folder Include="Structural\" />
-  </ItemGroup>
-
 </Project>
