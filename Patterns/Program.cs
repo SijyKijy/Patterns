@@ -1,5 +1,5 @@
 ﻿using Patterns.PatternsExample.Behavioral;
-using Patterns.PatternsExample.Behavioral.State;
+using Patterns.PatternsExample.Behavioral.Mediator;
 
 namespace Patterns
 {
@@ -38,7 +38,8 @@ namespace Patterns
 
             //behavioralStarter.Start(new Strategy_Run());
             //behavioralStarter.Start(new TemplateMethod_Run());
-            behavioralStarter.Start(new State_Run());
+            //behavioralStarter.Start(new State_Run());
+            behavioralStarter.Start(new Mediator_Run());
             #endregion
         }
     }

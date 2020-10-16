@@ -8,6 +8,7 @@ namespace Patterns.PatternsExample.Behavioral.State
     {
         public override string Name => "Состояние / State";
 
+        // Скорее всего перепишу пример, т.к. он не очень
         public override void Run()
         {
             var computer = new Computer();

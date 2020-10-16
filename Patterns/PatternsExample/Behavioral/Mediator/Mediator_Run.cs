@@ -1,5 +1,7 @@
 ﻿using Patterns.Modules;
-using System;
+using Patterns.PatternsExample.Behavioral.Mediator.Colleagues;
+using Patterns.PatternsExample.Behavioral.Mediator.Interfaces;
+using Patterns.PatternsExample.Behavioral.Mediator.Mediators;
 
 namespace Patterns.PatternsExample.Behavioral.Mediator
 {
@@ -9,7 +11,13 @@ namespace Patterns.PatternsExample.Behavioral.Mediator
 
         public override void Run()
         {
-            throw new NotImplementedException();
+            var phone = new Phone();
+            var laptop = new Laptop();
+
+            var mediator = new Router(new AbstractColleague[] { phone, laptop });
+
+            phone.SendMessage("Сообщение для телефонов");
+            laptop.SendMessage("Сообщение для ноутбуков");
         }
     }
 }
