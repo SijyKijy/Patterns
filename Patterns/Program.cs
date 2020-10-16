@@ -1,6 +1,5 @@
-﻿
-using Patterns.Patterns.Behavioral;
-using Patterns.Patterns.Behavioral.Strategy;
+﻿using Patterns.Patterns.Behavioral;
+using Patterns.Patterns.Behavioral.Template_Method;
 
 namespace Patterns
 {
@@ -37,7 +36,8 @@ namespace Patterns
             System.Console.WriteLine("\t --- Поведенческие ---");
             var behavioralStarter = new BehavioralStarter();
 
-            behavioralStarter.Start(new Strategy_Run());
+            //behavioralStarter.Start(new Strategy_Run());
+            behavioralStarter.Start(new TemplateMethod_Run());
             #endregion
         }
     }
