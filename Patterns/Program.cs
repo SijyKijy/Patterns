@@ -1,5 +1,5 @@
 ﻿using Patterns.PatternsExample.Behavioral;
-using Patterns.PatternsExample.Behavioral.Template_Method;
+using Patterns.PatternsExample.Behavioral.State;
 
 namespace Patterns
 {
@@ -37,7 +37,8 @@ namespace Patterns
             var behavioralStarter = new BehavioralStarter();
 
             //behavioralStarter.Start(new Strategy_Run());
-            behavioralStarter.Start(new TemplateMethod_Run());
+            //behavioralStarter.Start(new TemplateMethod_Run());
+            behavioralStarter.Start(new State_Run());
             #endregion
         }
     }
