@@ -1,5 +1,5 @@
-﻿using Patterns.Patterns.Behavioral;
-using Patterns.Patterns.Behavioral.Template_Method;
+﻿using Patterns.PatternsExample.Behavioral;
+using Patterns.PatternsExample.Behavioral.Template_Method;
 
 namespace Patterns
 {
