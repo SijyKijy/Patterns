@@ -5,7 +5,7 @@ using System;
 
 namespace Patterns.Patterns.Creationals.Factories.Factory_Method
 {
-    public class FactoryMethod_Run : Pattern, ICreationals
+    public class FactoryMethod_Run : AbstractPattern, ICreationals
     {
         public override string Name => "Фабричный метод / FactoryMethod";
 

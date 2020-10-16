@@ -3,7 +3,7 @@ using Patterns.Patterns.Creationals.Factories.Simple_Factory.Models;
 
 namespace Patterns.Patterns.Creationals.Factories.Simple_Factory
 {
-    public class SimpleFactory_Run : Pattern, ICreationals
+    public class SimpleFactory_Run : AbstractPattern, ICreationals
     {
         public override string Name => "Простая фабрика / Simple Factory";
 

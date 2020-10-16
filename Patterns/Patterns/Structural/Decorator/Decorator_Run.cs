@@ -5,7 +5,7 @@ using Patterns.Patterns.Structural.Decorator.Models;
 
 namespace Patterns.Patterns.Structural.Decorator
 {
-    public class Decorator_Run : Pattern, IStructural
+    public class Decorator_Run : AbstractPattern, IStructural
     {
         public override string Name => "Декоратор / Decorator";
 

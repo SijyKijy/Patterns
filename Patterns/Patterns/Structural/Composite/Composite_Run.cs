@@ -3,7 +3,7 @@ using Patterns.Patterns.Structural.Composite.Models;
 
 namespace Patterns.Patterns.Structural.Composite
 {
-    public class Composite_Run : Pattern, IStructural
+    public class Composite_Run : AbstractPattern, IStructural
     {
         public override string Name => "Компоновщик / Composite";
 

@@ -4,7 +4,7 @@ using System;
 
 namespace Patterns.Patterns.Creationals.Factories.Abstract_Factory
 {
-    public class AbstractFactory_Run : Pattern, ICreationals
+    public class AbstractFactory_Run : AbstractPattern, ICreationals
     {
         public override string Name => "Абстрактная фабрика / AbstractFactory";
 

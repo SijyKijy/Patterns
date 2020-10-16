@@ -4,7 +4,7 @@ using System;
 
 namespace Patterns.Patterns.Creationals.Prototype
 {
-    public class Prototype_Run : Pattern, ICreationals
+    public class Prototype_Run : AbstractPattern, ICreationals
     {
         public override string Name => "Прототип / Prototype";
 

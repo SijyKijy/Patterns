@@ -1,8 +1,8 @@
 ﻿namespace Patterns.Modules
 {
-    public abstract class Pattern : IPattern
+    public abstract class AbstractPattern : IPattern
     {
-        public Pattern() => ShowPatternName();
+        public AbstractPattern() => ShowPatternName();
 
         public abstract string Name { get; }
         public abstract void Run();

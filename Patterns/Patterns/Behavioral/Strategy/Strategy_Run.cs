@@ -4,7 +4,7 @@ using Patterns.Patterns.Behavioral.Strategy.Models.Strategies;
 
 namespace Patterns.Patterns.Behavioral.Strategy
 {
-    public class Strategy_Run : Pattern, IBehavioral
+    public class Strategy_Run : AbstractPattern, IBehavioral
     {
         public override string Name => "Стратегия / Strategy";
 

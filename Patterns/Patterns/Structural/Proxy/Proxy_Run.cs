@@ -3,7 +3,7 @@ using Patterns.Patterns.Structural.Proxy.Models;
 
 namespace Patterns.Patterns.Structural.Proxy
 {
-    public class Proxy_Run : Pattern, IStructural
+    public class Proxy_Run : AbstractPattern, IStructural
     {
         public override string Name => "Заместитель / Proxy";
 

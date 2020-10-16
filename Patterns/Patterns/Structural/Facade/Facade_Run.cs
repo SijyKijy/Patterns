@@ -3,7 +3,7 @@ using Patterns.Patterns.Structural.Facade.Systems;
 
 namespace Patterns.Patterns.Structural.Facade
 {
-    public class Facade_Run : Pattern, IStructural
+    public class Facade_Run : AbstractPattern, IStructural
     {
         public override string Name => "Фасад / Facade";
 

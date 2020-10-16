@@ -5,7 +5,7 @@ using Patterns.Patterns.Creationals.Builder.Modules.Builders;
 
 namespace Patterns.Patterns.Creationals.Builder
 {
-    public class Builder_Run : Pattern, ICreationals
+    public class Builder_Run : AbstractPattern, ICreationals
     {
         public override string Name => "Строитель/Builder";
 

@@ -4,7 +4,7 @@ using Patterns.Patterns.Structural.Adapter.Models;
 
 namespace Patterns.Patterns.Structural.Adapter
 {
-    public class Adapter_Run : Pattern, IStructural
+    public class Adapter_Run : AbstractPattern, IStructural
     {
         public override string Name => "Адаптер / Adapter";
 

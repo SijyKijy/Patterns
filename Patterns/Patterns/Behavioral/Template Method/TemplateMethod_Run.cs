@@ -5,7 +5,7 @@ using System;
 
 namespace Patterns.Patterns.Behavioral.Template_Method
 {
-    public class TemplateMethod_Run : Pattern, IBehavioral
+    public class TemplateMethod_Run : AbstractPattern, IBehavioral
     {
         public override string Name => "Шаблонный метод / Template Method";
 
