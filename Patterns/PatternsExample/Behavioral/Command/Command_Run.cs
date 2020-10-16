@@ -1,4 +1,5 @@
 ﻿using Patterns.Modules;
+using Patterns.PatternsExample.Behavioral.Command.Models;
 using System;
 
 namespace Patterns.PatternsExample.Behavioral.Command
@@ -9,7 +10,11 @@ namespace Patterns.PatternsExample.Behavioral.Command
 
         public override void Run()
         {
-            throw new NotImplementedException();
+            var invoker = new Waiter();
+
+            invoker.TakeOrder("Карбонара");
+            Console.WriteLine("--- --- ---");
+            invoker.UndoOrder();
         }
     }
 }
